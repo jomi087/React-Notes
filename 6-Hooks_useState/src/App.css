@@ -1,0 +1,31 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+.container{
+  display: flex;
+}
+
+div button{
+  margin:8px ;
+  
+} 
+
+div button:hover{
+  cursor: pointer;
+  border-radius: 5px;
+  color:red ;
+}
+
+div p{
+  margin:6px ;
+  font-size:20px;
+  font-weight: 800px;
+  align-content: center;
+  color:rgb(255, 255, 255)
+} 

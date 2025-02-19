@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+#para {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+h2 {
+    color: #333;
+}
+#child1, #child2 {
+    margin-top: 10px;
+    padding: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+
+
+/*
+const  parent = React.createElement(
+    'div',
+    {id:'parent'},
+    [   
+        React.createElement('h2',{id:'parent'},"React"),
+        React.createElement('h2',{},"by Jomi"),
+        React.createElement('div',{id:'child1'},
+            [
+                React.createElement('p',{},"text1"),
+                React.createElement('p',{},"text2")
+            ]),
+        React.createElement('div',{id:'child2'},
+            [
+                React.createElement('p',{},"another text1"),
+            ])
+    ]
+)
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+
+root.render(parent)
+
+*/

@@ -1,0 +1,37 @@
+*{
+  margin : 0px;
+  padding : 0px;
+}
+
+.container {
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 20px;
+  gap: 10px;        
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.blue{
+  background-color: blue;
+}
+
+.greenyellow{
+  background-color: greenyellow; 
+}
