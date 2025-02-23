@@ -1,8 +1,11 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Controlled Components (G)**
+    - A **Controlled Component** is a form input element (like `<input>`, `<textarea>`, or `<select>`) **whose value is controlled by React state** instead of the DOM.
+    - In a **Controlled Component**, React fully controls the form element's behavior using **state and event handlers**.
+    - **Scenario :-** Easy to Validate **,** Since React controls it, validation logic can be added easily.
+    - **When to Use Controlled Components?**
+        - **Best for forms with validation or dynamic behavior.**
+        - **When you need to update the UI based on user input.**
+        - **Example Use Cases:**
+            - Login form with **validation** (e.g., email format check).
+            - Search bar with **live suggestions**.
+            - Real-time **character counter** in a text field.

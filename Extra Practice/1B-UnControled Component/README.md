@@ -1,8 +1,14 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Uncontrolled Components (G)**
+    - An **Uncontrolled Component** is a form input element **that manages its own state internally**, instead of relying on React state. React does **not** control the input value; instead, the **DOM handles it directly** using `ref`
+    - In simple words
+        - The `<input>` does **not** have a `value` controlled by React state.
+        - Instead, **a `ref` (`useRef()`) is used to access the input's value from the DOM**.
+        - The component does **not re-render** when the input value changes.
+        - **When to Use Uncontrolled Components?**
+            - **Best when you need direct access to the DOM without triggering re-renders.**
+            - **Useful for integrating non-React libraries** (e.g., working with third-party forms).
+            - **When you don’t need to update the input value frequently in React state.**
+            - **Example Use Cases:**
+                - **File uploads** (`<input type="file" />`) – Since React cannot control file inputs.
+                - **Forms with default values** that don’t change often.
+                - **Handling focus or animations** (e.g., grabbing focus when a page loads)

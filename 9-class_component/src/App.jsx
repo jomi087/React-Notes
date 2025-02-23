@@ -3,7 +3,7 @@ import Home from './pages/home'
 
 function App() {
   return (
-    <Home value={"JOMI087"}/> // class component 
+    <Home value={"JOMI087"}/>   // this is like an  instance creating
 
   )
 }

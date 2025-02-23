@@ -140,3 +140,8 @@ const [val,setval] = useState("")
 
 export default App
 ```
+
+# cleanup function" in React.
+  * In functional components, the cleanup function inside useEffect is used to clean up resources when the component unmounts or before the effect runs again (in case of dependencies).
+  It is similar to componentWillUnmount in class components.
+  for more information check 9-class_component/README.md [use of componentWillUnmount ] 

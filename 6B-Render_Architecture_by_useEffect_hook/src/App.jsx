@@ -8,14 +8,19 @@ function App() {
 
   //With out dependencies ==> will re-run/re-render use effect hook again when got re-rendered...[explain at read me]
   useEffect(()=>{       
-    console.log("one")     
+    console.log("one")  
+    //# "cleanup function" for avoiding memory leaks
+   
   });     
 
   /*  With dependencies
   useEffect(()=>{       
     console.log("one")    ==> will not re-run/re-render use effecthook again when got re-rendered...[explain at read me]
+    //# "cleanup function" for avoiding memory leaks
+
   },[]); 
   */   
+
 
 
   console.log("two")
