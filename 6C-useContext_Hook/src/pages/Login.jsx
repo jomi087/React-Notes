@@ -7,7 +7,7 @@ const Login = () => {
     const passwordInputRef = useRef(null)
 
     const {setUser} = useContext(UserContext)   //accessing  the context value provided by UserContextProvider.
-    console.log(useContext(UserContext))
+    // console.log(useContext(UserContext))
 
     const someLogic= (e)=>{
         let userName = userInputRef.current.value
