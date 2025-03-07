@@ -125,31 +125,6 @@ useEffect(() => {
 If you don’t clean up resources in componentWillUnmount, the function will keep running in the background even after the component is removed.
 
 
-**Code Splitting**  
-Code Splitting & Performance Improvement in Vite
-Vite Automatically Handles Code Splitting
-
-Uses ES modules and Rollup to split JavaScript files.
-Tree shakes unused code to reduce bundle size.
-Why Dynamic Imports (import()) Improve Performance
-
-Reduces Initial Load Time – Loads only necessary code first.
-Faster Page Rendering – The browser processes less code initially.
-Efficient Resource Usage – Saves memory by loading code only when needed.
-When to Use Dynamic Imports?
-
-Large projects with many components.
-Multi-page apps where users don’t visit all pages.
-Heavy components like charts, maps, or rich text editors.
-When to Avoid Dynamic Imports?
-
-Small projects with minimal components.
-Frequently used components that are needed on most pages.
-Best Practice
-
-Use lazy loading for large, less frequently used parts of the app.
-Avoid unnecessary code splitting in small projects to keep things simple.
- 
 
 
 
