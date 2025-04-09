@@ -2,24 +2,25 @@
     - Here i have deleted some files which was create  by vite (like index.css,app.jsx,app.css) why so that at 1st time i dont want to make it complicated that y we will be lerning later about rest of the files
 
 # JSX (JAVA SCRIPT XMLM)
-
+* Definition
+* its not a separate language -> its a syntax extension for js (React.createElement(...)) 
 * it is HTML LIKE SYNTAX 
-* its not a separate language -> its a syntax extentnsion for  js 
+* Helps you write components in a declarative and readable way
 * its has some rules like 
     - class should be named as className
     - js logic can be written  with in {}
     - attributes must be in camelCase
-    - self closing tags
+    - self closing tags is required 
 
 - ie, in simple way  
     - JSX is like an extention which help to write code easier ie , instead on writing Read.createElement()
-    for every tag, which is very difficult and also not readable so to avoid that  a syntax extention was created that was "JSX" which is like an HTML thus helping us to write html like tags but in reality is not html it is jsx which is like an html + has add on fetures like intigrated js and more 
+    for every tag, which is very difficult and also not readable so to avoid that  a syntax extention was created that was "JSX" which is like an HTML thus helping us to write html like tags but in reality is not html it is jsx which is like an html + has add on fetures like intigrated js and  much more 
     
-    - Also There is a point to be noted which is js buy itself dosnt understand jsx .
+    - Also There is a point to be noted which is js by itself dosnt understand jsx .
     Browser and engin were designed to understood JS[es6] not JSX 
-    SO, JSX should be converted to js for that bulder came  to help in bundler there was a library "BABEL" 
-    which is a transpiler (transfor + compile) it transform JSX to  js  ( even in  you vist BABEL website there is a IDE were we can type JSX and it will convert it in to js in front of u) 
-        in simple words Bable convert JSX tag to React.createELement("",{},"hlo world) then after tihs the process is same as mentioned in " 1-html_with_React "
+    SO, JSX should be converted to js for that hat’s where bundlers come into play — and inside bundlers, there is a tool called  "BABEL" 
+    which is a transpiler (transform a code from one version to another) it transform JSX to  js  ( even in  you vist BABEL website there is a IDE were we can type JSX and it will convert it in to js in front of u) 
+        in simple words Bable convert JSX tag to React.createELement("",{},"hlo world) then after this the process is same as mentioned in " 1-html_with_React "
     
     How ever in vite the esbuld bundler it self transpile, so no need of babel how ever for other like in parcel ,webpack  Babel is used 
 
