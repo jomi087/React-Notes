@@ -16,8 +16,8 @@ const reducer = (CurrentState , action )=>{
 
     console.log("CurrentState =>",CurrentState)  ; console.log("action =>", action )
 
-    if( action.type == "increase"){
-        console.log({firstcount : CurrentState.firstcount + 1});
+    if( action.type == "increase"){ 
+        // console.log({firstcount : CurrentState.firstcount + 1});
         return {firstcount : CurrentState.firstcount + 1}
     }else if( action.type == "decrease"){
         return {firstcount : CurrentState.firstcount - 1 }
