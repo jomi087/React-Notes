@@ -11,14 +11,24 @@ Vite help react to getter better (ie fast , optimize.....)
 Run & check `npm run dev` (start server) 
 
 ## Why Use Vite for React?
-- Development faster
-    - 1️⃣ Instant Dev Server → Vite serves your React files without bundling, making startup almost instant cz of Es support.
+- Helps Development faster (below mentioned points works in development mode)
+    - 1️⃣ Instant Dev Server → Vite serves your React files without bundling, making startup(starting react ) almost instantly cz of Es support.
         - ES Module Support → Uses modern JavaScript features (like import/export) directly in the browser.
-    - 2️⃣ Super-Fast Hot Module Replacement (HMR) → Only updates the changed React components instead of rebuilding everything.
-    - 3️⃣ Trasnpilation  -> were vite use bundler like Esbuild in development to transform and compile the code from jsx to js 
-- Production faster
-    - 1️⃣ Faster Production Builds → Uses Rollup to optimize React code by cod splitting, tree shaking, and minification.
+    - 2️⃣ Super-Fast Hot Module Replacement (HMR) → Only updates the changed React components instead of rebuilding everything. in developer mode 
+    - 3️⃣ Trasnpilation  -> Vite uses esbuild to transpile ( translates or transforms) JSX/TS to regular JavaScript
+    ie,
+    Converts code from one source language to another (e.g., JSX → JS, TS → JS)
+- Helps Production faster
+    - 0️⃣  Transpiles modern features (like JSX, TS) using esbuild (esbuild is bundler  dont get mix with esmodule and esbuild)
+    - 1️⃣ Faster Production Builds → Uses Rollup(rollup is a bundler) to optimize React code by 
+        - code splitting ->  (mechanism for breaking your code into smaller chunks like lazyloading )
+        - tree shaking -> (removes unused code )
+        - minification -> (removing unnecessary characters from code like white-space , commets etc..)
+        - etc ...
+        * By this way it can reduce its size and improve performance.
+
     - 2️⃣ Optimized for React → Comes with React Fast Refresh for real-time UI updates.
+
     - 3️⃣ Smaller and Faster Bundles → Reduces final bundle size compared to Webpack or Parcel.
 
 
@@ -85,7 +95,7 @@ Vite internally uses Rollup for production builds to apply these optimizations a
 
 
 
-# Add on pints 
+# Add on points 
 
 **Two main bundling tools in vite**
 1) esbuild -> for development
