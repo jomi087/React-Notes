@@ -58,7 +58,7 @@ Prop Drilling is a situation in React where props are passed through multiple in
 
 ---
 **FYI**
-* This both are jst a way of managing a state (data)  which mean this comes under state Management 
+* This both  are jst a way of managing multiple states (datas), which mean this comes under state Management 
 
 - **State management** in React refers to the process of handling and updating the data (state) that controls how a component behaves and renders. It ensures that when the state changes, the UI updates accordingly.
 
