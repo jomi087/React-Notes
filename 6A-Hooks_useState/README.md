@@ -155,4 +155,14 @@ createRoot(document.getElementById('root')).render(<App />);
 | `useMemo`     | Optimizes performance by memoizing values                  |
 | `useCallback` | Optimizes functions to prevent unnecessary re-renders      |
 
+* useState 
+    - useState() is a React hook that allows functional components to declare and manage state within the component. It returns an array with two elements:
+        [ current state value ,  function to update that state ]
+    - The state is local to the component, meaning it only affects that specific component and does not directly influence other components unless explicitly shared (e.g., via props or context).
+    - The state persists across re-renders, and any update to the state triggers a re-render of the component.
+    - State should not be mutated directly; instead, you should use the provided update function to ensure that React can track the state changes and properly re-render the component.
+    - Each time the state is updated using the update function, React schedules a re-render of the component with the new state value, ensuring the UI is in sync with the state.
+
+
+
 

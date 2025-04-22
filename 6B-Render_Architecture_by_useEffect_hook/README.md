@@ -32,7 +32,10 @@
  - This can be achive through **useEffect Hooks**
 
 # useEffect Hooks 
-    its is used when ever want to do somthing after rendering a component
+  - useEffect() is a React hook that allows you to perform side effects in functional components. A side effect can be any operation that interacts with the outside world, such as fetching data, manipulating the DOM, or subscribing to events.
+
+  - It runs after the component renders and can be triggered on every render or based on specific dependencies. The hook returns a cleanup function (optional) that is executed when the component is unmounted or before the effect runs again, allowing you to clean up resources (like timers or subscriptions).
+
 
 ## Code with Expanation
 
@@ -141,7 +144,7 @@ const [val,setval] = useState("")
 export default App
 ```
 
-# cleanup function" in React.
+# cleanup function" in React
   * In functional components, the cleanup function inside useEffect is used to clean up resources when the component unmounts or before the effect runs again (in case of dependencies).
   It is similar to componentWillUnmount in class components.
   for more information check 9-class_component/README.md [use of componentWillUnmount ] 

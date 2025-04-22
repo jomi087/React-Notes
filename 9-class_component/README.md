@@ -44,14 +44,26 @@
 
 
 ## Life Cyle of a class Component
+
+> Notes :- 
+    The React component lifecycle refers to the series of stages that a React component goes through from the moment it is created and inserted into the DOM to the moment it is removed. These stages are broadly categorized into three phases: Mounting, Updating, and Unmounting.
+
+    During the Mounting phase, the component is being created and added to the DOM. Methods like constructor(), render(), and componentDidMount() are called here—componentDidMount() is especially important for tasks like fetching data or setting up subscriptions. The Updating phase occurs when there are changes in the component’s props or state that trigger a re-render. In this phase, methods like render() and componentDidUpdate() are executed, allowing the component to respond and act on changes efficiently. Finally, in the Unmounting phase, the component is removed from the DOM, and the method componentWillUnmount() is called. This is where you clean up things like timers, subscriptions, or event listeners. Each of these lifecycle methods gives you a chance to run specific code at important points in a component’s life.
+
+
 #### Reference =>  https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 #### Explanation: Lifecycle of a Class Component
-* React has three main lifecycle phases:
+* React has three main lifecycle phases :- 
+    (Mounting, Updating, and Unmounting) 
 
     - Mounting Phase (When a component is created and inserted into the DOM)
     - Updating Phase (When a component re-renders due to changes)
     - Unmounting Phase (When a component is removed from the DOM)
-    * Additionally, Render Phase & Commit Phase are part of React Fiber architecture but are not main lifecycle phases.
+
+    * Additional phases  were introduced by React Fiber Render Phase & Commit Phase
+     (but are not main lifecycle phases thats why my above note i didnt mentioend about it)     
+        - The Render Phase is where React determines what changes need to be made to the Virtual DOM, while the Commit Phase is when those changes are applied to the actual DOM.
+
 
 1. **Mounting Phase** When a component is created and added to the DOM
     * Render Phase
